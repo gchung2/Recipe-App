@@ -42,7 +42,7 @@ function RecipeCreate({ addRecipe }) {
         <tbody>
           <tr>
             <td>
-              <input
+              <input required
                 name="name"
                 type="text"
                 onChange={handleChange}
@@ -50,7 +50,7 @@ function RecipeCreate({ addRecipe }) {
               />
             </td>
             <td>
-              <input
+              <input required
                 name="cuisine"
                 type="text"
                 onChange={handleChange}
@@ -58,7 +58,7 @@ function RecipeCreate({ addRecipe }) {
               />
             </td>
             <td>
-              <input
+              <input required
                 name="photo"
                 type="text"
                 onChange={handleChange}
@@ -66,14 +66,14 @@ function RecipeCreate({ addRecipe }) {
               />
             </td>
             <td>
-              <textarea
+              <textarea required
                 name="preparation"
                 onChange={handleChange}
                 placeholder="preparation"
               />
             </td>
             <td>
-              <textarea
+              <textarea required
                 name="ingredients"
                 onChange={handleChange}
                 placeholder="ingredients"
